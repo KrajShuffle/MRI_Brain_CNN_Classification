@@ -47,3 +47,10 @@ Above figure provides cropped ROI image on the left and the original image on th
 On the left: final standardized, processed CNN input & On the right: original image if simply resized to (256,256)
 
 **Image processing resulted in heavy elimination of background, amplifying area occupied by ROI in (256,256) frame** 
+
+## Hyperparameter Optimization Results 
+Optimizing number of layers, filters per layer, kernel sizes, & number of training epochs, batch size, learning rate, L2 Regularization
+
+![HP_OP_Res](/Images/HPOP_Res.png)
+
+This was not a true gridsearch as it is typically a pseudo outer product to yield all combinations of all realistic values chosen for each of the tunable hyperparameters. Due to time constraints, some of the hyperparameters (batch size, learning rate, L2 regularization) were established over fewer tests compared to other hyperparameters. However, further optimization of those hyperparameters would not yield as much of a performance gain in comparison to optimizing the other hyperparameters. Also, this is a sample of the entire hyperparameter optimization testing results, but highlights the final chosen values for the tunable hyperparameters. 
