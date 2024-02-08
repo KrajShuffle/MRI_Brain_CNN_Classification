@@ -1,3 +1,5 @@
-# MRI_Brain_CNN_Classification
+# Convolutional Neural Network (CNN) for Brain Tumor Detection & Location Classification from MRI images via OpenCV & PyTorch
 
-Developed a convolutional neural network for detecting the presence of a brain tumor and subsequently classifying its location from 5712 brain MRI images. Using open-cv, the images were resized to the MRI Brain scan region of interest (ROI) prior to resizing the image to (256,256). 5712 images from 4 distinct classes were used to train the network and the network was tested on 1311 images.  
+## Significance
+
+According to research study conducted in 2015, based on 255 uninterrupted eight-hour workdays per year, radiologists are needing to review one image every three to four seconds to meet workload demands. However, the overall workload per radiologist is still increasing as MRI and CT scans are becoming more prevalent and the use of imaging contrasts/agents are increasing the complexity of information potentially gleaned from these scans. As a result, there are increasing cases of burnout amongst diagnostic radiologists. The aim of this project is to develop a deep learning approach that radiologists can potentially rely upon for to reduce their workloads. During this process, I hope to establish expertise in using PyTorch to develop deep learning models in a clean, and efficient manner with the hopes of being able to apply these skills to other similarly framed problems in the future. 
