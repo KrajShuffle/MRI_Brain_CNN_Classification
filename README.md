@@ -68,5 +68,10 @@ Overall Accuracy: 90.5%
 
 ![TestDS_Metrics](/Images/TestDSQMetrics.png)
 
+It is clear that the model is great at classifying the no tumor and pituitary class. However, it is clear the decision boundary the model is using to distinguish between the meningioma and glioma is not as robust as the decision boundaries used between the other classes. This is reflected in the precision and recall for the meningioma and glioma classes, but clearly evident from the confusion matrix revealing an overall 60 misclassifications where the meningioma image is actually a glioma image and vice versa. 
+
+## Future Steps
+1. Leverage PyTorch Dataset Class & DataLoaders to increase code efficiency, enable adaptability in data processing, and enable CPU parallelization to expedite batch generation and overall training process
+2. Try a transformer-based approach and see how a more advanced architecture compares to current model generated from scratch
 
 
