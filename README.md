@@ -54,3 +54,19 @@ Optimizing number of layers, filters per layer, kernel sizes, & number of traini
 ![HP_OP_Res](/Images/HPOP_Res.png)
 
 This was not a true gridsearch as it is typically a pseudo outer product to yield all combinations of all realistic values chosen for each of the tunable hyperparameters. Due to time constraints, some of the hyperparameters (batch size, learning rate, L2 regularization) were established over fewer tests compared to other hyperparameters. However, further optimization of those hyperparameters would not yield as much of a performance gain in comparison to optimizing the other hyperparameters. Also, this is a sample of the entire hyperparameter optimization testing results, but highlights the final chosen values for the tunable hyperparameters. 
+
+## Convolutional Neural Network Architecture
+
+![Conv_Nw](/Images/ConvNetwork.png)
+
+Used Batch Normalization & ReLU as the Activation Function throughout the Convolution Layers
+
+## Classification Metrics on Test Dataset
+Overall Accuracy: 90.5%
+
+![TestDS_CM](/Images//TestDS_CM.png)
+
+![TestDS_Metrics](/Images/TestDSQMetrics.png)
+
+
+
