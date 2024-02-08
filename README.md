@@ -28,4 +28,22 @@ Glioma | Meningioma | Pituitary | No Tumor |
 ## Model Objective
 The goal is to accurately classify an MRI Brain image into one of these 4 classes, with the tumor classes varying based on brain location.
 
+## Data Processing Workflow
+1. Converting Image to Grayscale (Eliminates 2 image channels which were unnecessary & simplifies processing)
 
+![MRI_to_GS](/Images/MRI_GraySc.png)
+2. Apply a binary mask to separate brain from background and aid identification of Region of Interest (ROI) where contour is drawn
+
+![ROI_ID](/Images/MRI_Mask_DrawCont.png)
+
+3. Use coordinates of drawn contour to crop to ROI
+
+![CMP_ROI_OG](/Images/ROI_Crop_Res.png)
+Above figure provides cropped ROI image on the left and the original image on the right
+
+4. Standardize images to fixed size of (256, 256) for training convolutional neural network
+
+![Processed_OG](/Images/Standardize_Size.png)
+On the left: final standardized, processed CNN input & On the right: original image if simply resized to (256,256)
+
+**Image processing resulted in heavy elimination of background, amplifying area occupied by ROI in (256,256) frame** 
